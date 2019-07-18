@@ -117,7 +117,7 @@ sudo apt install npm
 ```
 npm --version
 ```
-* 安装yarn、tyurn
+* 安装yarn、tyarn
 ```
 sudo npm i yarn tyarn -g
 tyarn -v
