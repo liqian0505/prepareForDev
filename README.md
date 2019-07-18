@@ -33,6 +33,9 @@
 * 方式二
   + 命令安装（按照教程没有成功，只能选择第一种）
 ## 安装git
+* 参考教程  
+[https://www.linuxidc.com/Linux/2018-05/152610.htm](https://www.linuxidc.com/Linux/2018-05/152610.htm)
+
 
 * 首先，通过运行以下命令确保您的系统和apt包列表完全更新：  
 ```
@@ -52,8 +55,6 @@ git --version
 git config --global user.name "***"
 git config --global user.email "***"
 ```
-* 参考教程  
-[https://www.linuxidc.com/Linux/2018-05/152610.htm](https://www.linuxidc.com/Linux/2018-05/152610.htm)
 
 ## 安装maven
 * 参考教程
@@ -89,13 +90,35 @@ git config --global user.email "***"
 * 问题
   + 将当前用户加入docker组后，仍不能直接运行docker命令，还是要加sudo，未找到有效方案
 ## 安装docker-compose
-* 参考官方说明：
+* 参考官方说明：[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-验证安装
+* 验证安装
 ```
 $ docker-compose --version
 docker-compose version 1.24.0, build 1110ad01
+```
+## 安装前段相关工具
+* 参考教程 
+  + [https://blog.csdn.net/chenyao1994/article/details/82495163](https://blog.csdn.net/chenyao1994/article/details/82495163)
+  + [https://umijs.org/zh/guide/getting-started.html](https://umijs.org/zh/guide/getting-started.html)
+* 更新ubuntu软件源
+```
+sudo apt-get update
+```
+* 安装nodejs
+```
+sudo apt-get install nodejs
+sudo apt install npm
+```
+* 检测npm
+```
+npm --version
+```
+* 安装yarn、tyurn
+```
+sudo npm i yarn tyarn -g
+tyarn -v
 ```
