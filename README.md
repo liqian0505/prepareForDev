@@ -81,5 +81,21 @@ git config --global user.email "***"
   ```
   mvn --version  或者  mvn -v
   ```
-
-
+## 安装docker
+* 先修改ubuntu更新源sources.list，不修改的话后面安装进行很慢
+  + 参考教程：[https://blog.csdn.net/weixin_34378045/article/details/87150576](https://blog.csdn.net/weixin_34378045/article/details/87150576)
+* 执行安装docker命令
+  + 参考教程：[https://blog.csdn.net/qq_33951308/article/details/81140922](https://blog.csdn.net/qq_33951308/article/details/81140922)
+* 问题
+  + 将当前用户加入docker组后，仍不能直接运行docker命令，还是要加sudo，未找到有效方案
+## 安装docker-compose
+* 参考官方说明：
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+验证安装
+```
+$ docker-compose --version
+docker-compose version 1.24.0, build 1110ad01
+```
