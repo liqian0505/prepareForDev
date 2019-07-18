@@ -24,7 +24,7 @@
   export JAVA_HOME=后面要填写自己解压后的jdk的路径
   + 生效~/.bashrc文件
   ```
-  sudo source ~/.bashrc
+  source ~/.bashrc
   ```
   + 测试是否安装成功
   ```
@@ -54,3 +54,32 @@ git config --global user.email "***"
 ```
 * 参考教程  
 [https://www.linuxidc.com/Linux/2018-05/152610.htm](https://www.linuxidc.com/Linux/2018-05/152610.htm)
+
+## 安装maven
+* 参考教程
+  + [https://www.jianshu.com/p/ce3f3df35387](https://www.jianshu.com/p/ce3f3df35387)
+* 下载 Maven 安装包
+  + 下载地址: [http://mirror.bit.edu.cn/apache/maven/maven-3/](http://mirror.bit.edu.cn/apache/maven/maven-3/)
+* 解压安装包
+  ```
+  cd /usr/local
+  sudo tar -xzf apache-maven-3.6.1-bin.tar.gz
+  ```
+* 配置环境变量, 编辑文件 ~/.bashrc, 在末尾添加
+  ```
+  # maven config  
+  export M2_HOME=/usr/local/apache-maven-3.6.1  
+  export M2=$M2_HOME/bin  
+  export MAVEN_OPTS="-Xms256m -Xmx512m"  
+  export PATH=$M2:$PATH  
+  ```
+* 使环境变量生效
+  ```
+  source ~/.bashrc
+  ```
+* 测试是否安装成功
+  ```
+  mvn --version  或者  mvn -v
+  ```
+
+
