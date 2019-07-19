@@ -82,6 +82,8 @@ git config --global user.email "***"
   ```
   mvn --version  或者  mvn -v
   ```
+* 设置国内镜像，提升下载速度
+  [https://blog.csdn.net/boywcx/article/details/82628703](https://blog.csdn.net/boywcx/article/details/82628703)
 ## 安装docker
 * 先修改ubuntu更新源sources.list，不修改的话后面安装进行很慢
   + 参考教程：[https://blog.csdn.net/weixin_34378045/article/details/87150576](https://blog.csdn.net/weixin_34378045/article/details/87150576)
