@@ -100,7 +100,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
 docker-compose version 1.24.0, build 1110ad01
 ```
-## 安装前段相关工具
+## 安装前端相关工具
 * 参考教程 
   + [https://blog.csdn.net/chenyao1994/article/details/82495163](https://blog.csdn.net/chenyao1994/article/details/82495163)
   + [https://umijs.org/zh/guide/getting-started.html](https://umijs.org/zh/guide/getting-started.html)
@@ -113,6 +113,7 @@ sudo apt-get update
 sudo apt-get install nodejs
 sudo apt install npm
 ```
+  最好再根据第一个教程，升级nodejs到最新版本
 * 检测npm
 ```
 npm --version
@@ -121,4 +122,8 @@ npm --version
 ```
 sudo npm i yarn tyarn -g
 tyarn -v
+```
+* 安装cnpm [https://npm.taobao.org/](https://npm.taobao.org/)
+```
+sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
